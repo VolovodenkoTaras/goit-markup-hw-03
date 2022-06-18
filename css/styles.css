@@ -20,6 +20,12 @@ body {
 
 /* ОБЩЕЕ */
 
+p,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Скрыл подчеркивание у ссылок */
 .link {
   text-decoration: none;
@@ -33,11 +39,27 @@ body {
 /* Убрал точки у списков */
 .list {
   list-style: none;
+
+  padding: 0;
+  margin: 0;
 }
 
-/* Наследование для кнопок */
+/* Для всех кнопок */
 .button {
   font-family: inherit;
+
+  border: 0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Контейнеры */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* Логотип */
@@ -90,6 +112,7 @@ body {
 /* Герой */
 .hero {
   background-color: var(--footer-bg-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -100,7 +123,9 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /* Кнопка героя */
@@ -113,6 +138,10 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
 }
 
 .hero .button:hover,
@@ -121,6 +150,11 @@ body {
 }
 
 /* Секции */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   color: var(--title-text-color);
 
@@ -128,6 +162,9 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /* Особенности*/
@@ -135,7 +172,11 @@ body {
   color: var(--title-text-color);
 
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .features .text {
@@ -149,6 +190,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  margin-bottom: 10px;
 }
 
 .team .text {
@@ -192,6 +235,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+
+  padding: 6px 22px;
 }
 
 .portfolio .button:hover,

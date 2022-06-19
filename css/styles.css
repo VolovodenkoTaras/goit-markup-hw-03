@@ -7,6 +7,7 @@
   --second-grey-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --contacts-ft-color: rgba(255, 255, 255, 0.6);
+  --button-hero-hover-color: #188ce8;
 }
 
 body {
@@ -21,6 +22,8 @@ body {
 /* ОБЩЕЕ */
 
 p,
+h1,
+h2,
 h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -146,7 +149,8 @@ h3 {
 
 .hero .button:hover,
 .hero .button:focus {
-  visibility: hidden;
+  color: var(--primary-white-color);
+  background-color: var(--button-hero-hover-color);
 }
 
 /* Секции */

@@ -89,11 +89,31 @@ h5 {
 }
 
 /* Навигация по сайту */
+
+.main-header,
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
 
   font-weight: 500;
   letter-spacing: 0.02em;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -103,6 +123,15 @@ h5 {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.contacts-header {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-header .item + .item {
+  margin-left: 50px;
 }
 
 .contacts-header .link {
@@ -164,7 +193,8 @@ h5 {
 }
 
 /* Секции */
-.section {
+.section,
+.portfolio {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 94px;
@@ -184,6 +214,15 @@ h5 {
 }
 
 /* Особенности*/
+
+.features {
+  display: flex;
+}
+
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features .title {
   color: var(--title-text-color);
 
@@ -199,7 +238,30 @@ h5 {
   line-height: 1.71;
 }
 
+/* Чем мы занимаемся */
+
+.work {
+  display: flex;
+}
+
+.work .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.foto-work {
+  display: block;
+}
+
 /* Команда*/
+
+.team {
+  display: flex;
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team .title {
   color: var(--title-text-color);
 
@@ -208,11 +270,14 @@ h5 {
   line-height: 1.19;
 
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .team .text {
   font-size: 16px;
   line-height: 1.19;
+
+  text-align: center;
 }
 
 .team {
@@ -220,6 +285,7 @@ h5 {
 }
 
 .foto-team {
+  display: block;
   margin-top: 0;
   margin-bottom: 30px;
   border-radius: 0px;
@@ -263,7 +329,13 @@ h5 {
 }
 
 .portfolio-filter {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
+}
+
+.portfolio-filter .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio .button:hover,
@@ -273,6 +345,12 @@ h5 {
 }
 
 /* Список портфолио */
+
+.portfolio-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .portfolio-projects .title {
   color: var(--title-text-color);
 
@@ -293,4 +371,8 @@ h5 {
   margin-bottom: 20px;
   margin-left: 24px;
   margin-right: 24px;
+}
+
+.foto-portfolio {
+  display: block;
 }

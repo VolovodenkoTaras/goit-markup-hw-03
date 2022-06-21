@@ -30,7 +30,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul,
+li {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -268,28 +270,28 @@ h6 {
   margin-right: 30px;
 }
 
+.team-description {
+  background-color: var(--primary-white-color);
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team .title {
   color: var(--title-text-color);
-  background-color: var(--primary-white-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 
-  padding-top: 30px;
-  padding-bottom: 10px;
-  text-align: center;
+  margin-bottom: 10px;
 }
 
 .team .text {
-  background-color: var(--primary-white-color);
-
   font-size: 16px;
   line-height: 1.19;
-
-  padding-bottom: 30px;
-  text-align: center;
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team {
@@ -298,8 +300,6 @@ h6 {
 
 .foto-team {
   display: block;
-  margin-top: 0;
-  border-radius: 0px;
 }
 
 /* Подвал */
@@ -371,7 +371,7 @@ h6 {
 
 /* Список портфолио */
 
-.portfolio-projects {
+.portfolio-projects.list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -404,6 +404,8 @@ h6 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 .portfolio-projects .text {

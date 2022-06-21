@@ -29,7 +29,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -201,6 +202,11 @@ h5 {
   padding-bottom: 94px;
 }
 
+.no-padding {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
 .section-title {
   color: var(--title-text-color);
 
@@ -217,6 +223,7 @@ h5 {
 
 .features {
   display: flex;
+  justify-content: center;
 }
 
 .features .item:not(:last-child) {
@@ -296,6 +303,16 @@ h5 {
   background-color: var(--footer-bg-color);
 }
 
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 .contacts-footer .link {
   color: var(--contacts-ft-color);
 
@@ -305,6 +322,10 @@ h5 {
 
 .contacts-footer .address {
   color: var(--primary-white-color);
+}
+
+.contacts-footer .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contacts-footer .link:hover,

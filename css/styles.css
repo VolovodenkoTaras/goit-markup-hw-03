@@ -44,7 +44,17 @@ li {
 
 /* Скрыл ненужные заголовки */
 .hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Убрал точки у списков */
@@ -371,14 +381,15 @@ li {
 
 /* Список портфолио */
 
-.portfolio-projects.list {
+.portfolio-projects {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* calc(100% - кол-во марджинов в строке * значение марджина / кол-во элементов в строке */
+/* calc ((100% - кол-во марджинов в строке * значение марджина ) / кол-во элементов в строке */
 .portfolio-projects .item {
-  width: calc(100%-60px / 3);
+  width: calc((100% - 60px) / 3);
+
   margin-right: 30px;
   margin-bottom: 30px;
 }

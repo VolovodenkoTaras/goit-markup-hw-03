@@ -31,8 +31,7 @@ h3,
 h4,
 h5,
 h6,
-ul,
-li {
+ul {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -235,6 +234,7 @@ li {
 .features {
   display: flex;
   justify-content: center;
+  padding-left: 0;
 }
 
 .features .item:not(:last-child) {
@@ -260,13 +260,15 @@ li {
 
 .work {
   display: flex;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
 .work .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.foto-work {
+.photo-work {
   display: block;
 }
 
@@ -274,6 +276,8 @@ li {
 
 .team {
   display: flex;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
 .team .item:not(:last-child) {
@@ -286,6 +290,8 @@ li {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -308,7 +314,7 @@ li {
   background-color: var(--second-grey-color);
 }
 
-.foto-team {
+.photo-team {
   display: block;
 }
 
@@ -424,6 +430,6 @@ li {
   line-height: 1.88;
 }
 
-.foto-portfolio {
+.photo-portfolio {
   display: block;
 }

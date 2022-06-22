@@ -166,6 +166,7 @@ ul {
 .hero {
   background-color: var(--footer-bg-color);
   text-align: center;
+  padding: 200px 0;
 }
 
 .hero-title {
